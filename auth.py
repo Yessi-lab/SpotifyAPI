@@ -22,8 +22,8 @@ class RequestHandler(BaseHTTPRequestHandler):
 
 class Auth:
 
-    __client_id = '491b8597696e411fa2b9d74af2654c2f'
-    __client_secret = '686e780f32cd47a0a26ed262e594503a'
+    __client_id = ''
+    __client_secret = ''
     __server = 'localhost'
     __port = 8080
     __redirect_uri = f'http://{__server}:{__port}'
