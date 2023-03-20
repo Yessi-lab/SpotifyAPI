@@ -12,7 +12,6 @@ Se puede hacer uso de la API Web de Spotify (https://developer.spotify.com/docum
 El primer paso es conseguir autenticarse contra la plataforma de Spotify con permisos completos para acceder al perfil del usuario a través de OAuth, y que se puedan consultar los datos requeridos en cada apartado. Para facilitar dicha tarea se provee el código de la clase Auth, que tiene dos métodos públicos, el primero *generate_token*, que se puede usar para crear un nuevo token de conexión (para ello habrá que modificar las variables de clase *client_id* y *client_secret*, que deberían corresponder con las de vuestra aplicación). El segundo método es *get_token*, que hace uso de un token previamente generado y almacenado para su uso posterior, en caso de que ese token haya caducado, intenta regenerarlo.
 
 El script contenido en *main.py* hace uso de dicha clase Auth para conectarse a la API de Spotify y realizar una búsqueda.
-
 Se piden los siguientes datos:
 
 - Los 10 artistas más escuchados por el usuario
